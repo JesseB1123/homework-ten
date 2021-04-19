@@ -1,0 +1,14 @@
+@mixin center($ElementWidth, $ElementMargin: 0 auto) {
+    max-width: $ElementWidth;
+    margin: $ElementMargin;
+}
+
+@mixin site-button($ButtonPadding: 10px, $ButtonRadius: 20px, $ButtonColor: #79addc) {
+    padding: $ButtonPadding;
+    border-radius: $ButtonRadius;
+    background-color: $ButtonColor;
+    font-family: Gill;
+    color: white;
+    text-transform: uppercase;
+    width: fit-content;
+}

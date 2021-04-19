@@ -1,0 +1,76 @@
+.blog {
+    @include center(980px);
+
+    h1 {
+        font-family: $big-site-font;
+        border-bottom: 2px solid black;
+        font-size: 40px;
+        width: fit-content;
+    }
+
+    .blog-post {
+        width: 100%;
+        display: flex;
+        min-height: 300px;
+        margin-bottom: 70px;
+
+        .left-column {
+            width: 75px;
+            margin-right: 20px;
+
+            .blog-post-date {
+                width: 75px;
+                height: 75px;
+                background-color: $site-blue;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .day {
+                    color: white;
+                    font-family: $big-site-font;
+                    font-weight: 1000;
+                    font-size: 30px;
+                }
+                .month {
+                    color: white;
+                    font-family: $site-font;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .right-column {
+            width: 885px;
+
+            .blog-post-content {
+                width: 100%;
+                
+                .blog-post-content-img {
+                    height: 250px;
+                    background-image: url(../img/blog.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-bottom: 20px;
+                }
+                .blog-post-content-title {
+                    font-family: $site-font;
+                    margin-bottom: 15px;
+                }
+                .blog-post-content-text {
+                    font-family: $site-font;
+                    color: $site-blue;
+                    font-size: 12px;
+                    max-width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .blog {
+        padding: 0 10px 0 10px;
+    }
+}

@@ -1,0 +1,131 @@
+.tour {
+    // padding: 0 5px 0 5px;
+
+    header {
+        @include center(981px);
+        height: 200px;
+        background-image: linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, .5), 
+            rgba(0, 0, 0, .5)
+          ), 
+            url(../img/tours-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+
+        span {
+            font-family: Proxima;
+            font-size: 60px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    .tours {
+        @include center(818px, 48px auto 0 auto);
+        min-height: 200px;
+        // background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .tour-promo {
+            width: 236px;
+            height: 304px;
+            background-color: aqua;
+            margin-bottom: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .tour-promo-header {
+                padding-top: 30px;
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+
+            .tour-promo-price {
+                font-size: 30px;
+                margin-bottom: 80px;
+                text-transform: uppercase;
+            }
+
+            .tour-promo-button {
+                @include site-button(10px 30px, 20px);
+                
+                a {
+                    text-decoration: none;
+                    color: $site-white;
+                }
+            }
+        }
+
+        .one {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-01.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .two {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-02.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .three {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-03.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .four {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-04.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .five {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-05.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .six {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-06.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .seven {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-07.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .eight {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-08.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .nine {
+            background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-09.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+@media all and (max-width: 825px) {
+    .tour{
+        .tours {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

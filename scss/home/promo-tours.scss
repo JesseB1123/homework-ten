@@ -1,0 +1,70 @@
+.promo-tours {
+    max-width: 1280px;
+    min-height: 304px;
+    margin: -50px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    .promo {
+        height: 304px;
+        width: 236px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        .promo-headers {
+            font-size: 60px;
+        }
+        
+        .promo-details {
+            text-align: center;
+            margin: 0 auto;
+
+            .price {
+                color: $site-white;
+                font-family: $big-site-font;
+                margin-bottom: 75px;
+            }
+            .price-size {
+                font-size: 25px;
+            }
+        }
+    }
+
+    #promo1 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #promo2 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-02.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #promo3 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black), url(../img/tour-03.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .promo-tours {
+        width: 304px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .promo {
+            margin: 0 auto 30px auto;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.special {
+    @include center(980px);
+    padding: 0 10px 0 10px;
+
+    h1 {
+        font-family: $big-site-font;
+        font-size: 40px;
+        border-bottom: 2px solid black;
+        width: 180px;
+    }
+    .special-offer {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+
+        .special-offer-img {
+            width: 200px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        .spain {
+            background-image: url(../img/special-offer-01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .thailand {
+            background-image: url(../img/special-offer-02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .special-offer-text {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            .special-offer-header {
+                display: flex;
+                align-items: center;
+
+                h1 {
+                    font-family: $big-site-font;
+                    font-size: 35px;
+                    border-bottom: 2px solid black;
+                    margin-right: 10px;
+                    width: fit-content;
+                }
+                p {
+                    font-family: $big-site-font;
+                    color: orange;
+                    font-size: 25px;
+                    width: fit-content;
+                }
+            }
+            p {
+                font-family: $site-font;
+                max-width: 300px;
+            }
+            .special-offer-button {
+                @include site-button(10px, 30px);
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}

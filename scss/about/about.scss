@@ -1,0 +1,93 @@
+.about {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    .about-top-section {
+        width: 100%;
+
+        h1 {
+            width: 140px;
+            font-family: $big-site-font;
+            font-size: 60px;
+            font-weight: 100;
+            border-bottom: black solid 2px;
+        }
+        p {
+            font-family: $site-font;
+            padding-top: 16px;
+            margin-bottom: 100px;
+        }
+    }
+
+    .about-bottom-section {
+        width: 100%;
+        margin-bottom: 160px;
+
+        h1 {
+            width: 220px;
+            font-family: $big-site-font;
+            font-size: 45px;
+            font-weight: 100;
+            border-bottom: black solid 2px;
+        }
+        .client {
+            max-width: 676px;
+            min-height: 150px;
+            margin-bottom: 38px;
+            display: flex;
+    
+            .client-img {
+                width: 260px;
+                height: 150px;
+            }
+            .client1 {
+                background-image: url(../img/about-client-01.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .client2 {
+                background-image: url(../img/about-client-02.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .client-quote {
+                position: relative;
+                width: 100%;
+                padding-left: 20px;
+
+                p {
+                    font-family: $site-font;
+                    font-style: italic;
+                }
+    
+                p:last-of-type {
+                    margin-bottom: 20px;
+                }
+                
+                .client-quote-name {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-family: $big-site-font;
+                    color: $site-blue;
+                    font-size: 20px;
+                    font-kerning: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .about {
+        .about-top-section {
+            padding: 0 10px 0 10px;
+        }
+        .about-bottom-section {
+            padding: 0 10px 0 10px;
+        }
+    }
+}

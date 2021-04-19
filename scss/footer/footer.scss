@@ -1,0 +1,27 @@
+footer {
+    max-width: 1280px;
+    height: 100px;
+    background-color: $site-blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .logo {
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .copyright {
+        color: $site-white;
+        font-size: 12px;
+        font-family: $site-font;
+        margin: auto;
+    }
+
+    .social-links {
+        padding-top: 10px;
+        margin: auto;
+    }
+}
+

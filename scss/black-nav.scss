@@ -1,0 +1,35 @@
+.black-nav {
+    max-width: 980px;
+    height: 60px;
+    margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 2px;
+
+    .logo {
+        width: 92px;
+        height: 42px;
+    }
+
+    .links {
+        width: 500px;
+        height: 42px;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        font-family: $site-font;
+        font-weight: 100;
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: auto;
+        }
+
+        .vl {
+            border-left: 1px solid $site-blue;
+            height: 20px;
+            margin: auto;
+        }
+    }
+}

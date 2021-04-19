@@ -1,0 +1,73 @@
+.contact {
+    @include center(980px);
+
+    h1 {
+        font-family: $big-site-font;
+        border-bottom: 2px solid black;
+        width: fit-content;
+        font-size: 40px;
+    }
+
+    .contact-body {
+        width: 100%;
+        display: flex;
+        margin-bottom: 100px;
+
+        .left-column {
+            width: 490px;
+
+            .map {
+                width: 420px;
+                height: 450px;
+                background-image: url(../img/contact-map.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 20px;
+            }
+            .address {
+                font-family: $site-font;
+                margin-bottom: 50px;
+            }
+        }
+        .right-column {
+            width: 490px;
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                input, textarea{
+                    background-color: whitesmoke;
+                    border: none;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    font-family: $site-font;
+                }
+                
+                .contact-button {
+                    background-color: $site-blue;
+                    color: white;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .contact {
+        h1 {
+            margin-left: 10px;
+        }
+        .contact-body{
+            flex-direction: column;
+            align-items: center;
+            
+            .left-column .map {
+                width: 490px;
+            }
+        }    
+    }
+}

@@ -1,0 +1,115 @@
+.booking-form {
+    max-width: 1280px;
+    height: 890px;
+    margin: 0 auto;
+
+    .form-holder{
+        max-width: 875px;
+        margin: 0 auto;
+
+        .form-header {
+            font-family: $big-site-font;
+            font-size: 40px;
+            font-weight: 100;
+            padding: 70px 0 40px 0;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .form-row {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                
+                .half {
+                    min-width: 49%;
+                }
+                .most {
+                    min-width: 85%;
+                }
+                .full {
+                    width: 100%;
+                }
+
+                .form-text {
+                    font-family: $site-font;
+                    font-weight: 100;
+                    margin: auto 0 auto 0;
+                }
+
+                input {
+                    border: 1px solid $site-blue;
+                    height: 50px;
+                    padding: 10px;
+                    font-family: $site-font;
+                    margin-bottom: 20px;
+                }
+
+                .selectors {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    select {
+                        border: 1px solid $site-blue;
+                        height: 50px;
+                        min-width: 90px;
+                        padding: 10px;
+                        font-family: $site-font;
+                        margin: 0 0 20px 0;
+                    }
+                }
+
+                textarea {
+                    border: 1px solid $site-blue;
+                    padding: 10px;
+                    font-family: $site-font;
+                    margin-bottom: 25px;
+                }
+
+                #submit-button {
+                    color: $site-white;
+                    background-color: $site-blue;
+                    border-radius: 25px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .booking-form {
+        height: 1150px;
+        .form-holder {
+        width: 475px;
+
+            .form-header {
+                text-align: center;
+            }
+
+            .form-row {
+                flex-direction: column;
+
+                .half {
+                    width: 100%;
+                }
+                .most {
+                    width: 100%;
+                }
+
+                .selectors {
+                    flex-direction: column;
+
+                    select {
+                        margin: 0 0 20px 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
